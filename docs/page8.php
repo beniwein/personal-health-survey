@@ -23,6 +23,7 @@ meals or snacks contain vegetables?</p>
 <div class="meal">
 <img src="img/meal-vegetables.jpg" alt="Meal with vegetables">
 </div>
+<?php include 'footer.php'?>
 
 <script src="main.js"></script>
 </body>

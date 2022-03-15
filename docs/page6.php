@@ -23,6 +23,8 @@ meals or snacks contain carbohydrates?</p>
 <div class="meal">
 <img src="img/meal-carbohydrates.jpg" alt="Meal with carbohydrates">
 </div>
+<?php include 'footer.php'?>
+
 <script src="main.js"></script>
 </body>
 

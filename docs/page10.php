@@ -22,6 +22,7 @@ meals are microwaved or prepared?</p>
 <div class="meal">
 <img src="img/meal-microwaved.jpg" alt="Microwaved meal">
 </div>
+<?php include 'footer.php'?>
 
 <script src="main.js"></script>
 </body>

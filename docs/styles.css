@@ -25,4 +25,13 @@ body {
 
 .meal {
     margin-top: 10px;
+    border-radius: 25%;
   }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: #f7eeaf;
+}

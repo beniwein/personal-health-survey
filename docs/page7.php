@@ -23,6 +23,7 @@ meals or snacks contain protein?</p>
 <div class="meal">
 <img src="img/meal-protein.jpg" alt="Protein-meal">
 </div>
+<?php include 'footer.php'?>
 
 <script src="main.js"></script>
 </body>

@@ -34,7 +34,7 @@ Question 1 out of 10. Check your final score after completion.</p><br>
 <div class="gradient"></div><br> 
 
 <a class="btn btn-primary btn-sm float-end" href="page2.php" type="button">Next</a>
-
+<?php include 'footer.php'?>
 <script src="main.js"></script>
 </body>
 

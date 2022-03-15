@@ -22,6 +22,7 @@ meals or snacks contain fruit?</p>
 <div class="meal">
 <img src="img/meal-fruits.jpg" alt="Fruity meal">
 </div>
+<?php include 'footer.php'?>
 
 <script src="main.js"></script>
 </body>

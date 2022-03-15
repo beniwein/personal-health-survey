@@ -26,6 +26,7 @@
 </p>
 <a class="btn btn-primary btn-sm float-end" href="page3.php" type="button">Next</a>
 </div>
+<?php include 'footer.php'?>
 <script src="main.js"></script>
 </body>
 
