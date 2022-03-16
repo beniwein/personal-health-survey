@@ -23,7 +23,11 @@ meals or snacks contain protein?</p>
 <div class="meal">
 <img src="img/meal-protein.jpg" alt="Protein-meal">
 </div>
+
 <?php include 'footer.php'?>
+
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="page7.php">
 
 <script src="main.js"></script>
 </body>

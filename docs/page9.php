@@ -22,7 +22,11 @@ meals or snacks contain fruit?</p>
 <div class="meal">
 <img src="img/meal-fruits.jpg" alt="Fruity meal">
 </div>
+
 <?php include 'footer.php'?>
+
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="page9.php">
 
 <script src="main.js"></script>
 </body>

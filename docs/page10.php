@@ -22,7 +22,11 @@ meals are microwaved or prepared?</p>
 <div class="meal">
 <img src="img/meal-microwaved.jpg" alt="Microwaved meal">
 </div>
+
 <?php include 'footer.php'?>
+
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="page10.php">
 
 <script src="main.js"></script>
 </body>

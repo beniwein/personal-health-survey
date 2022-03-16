@@ -35,7 +35,11 @@ or way too much additional physical activity?</p>
 <div class="gradient"></div><br> 
 
 <a class="btn btn-primary btn-sm float-end" href="page6.php" type="button">Next</a>
+
 <?php include 'footer.php'?>
+
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="page5.php">
 
 <script src="main.js"></script>
 </body>

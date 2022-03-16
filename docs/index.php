@@ -15,6 +15,7 @@
 </div>
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
+<!-- Homepage-Intro -->
 <p>Welcome to our Survey on "Nutrition, Fitness and Sport". Let's get started with
 Question 1 out of 10. Check your final score after completion.</p><br>
 
@@ -34,7 +35,12 @@ Question 1 out of 10. Check your final score after completion.</p><br>
 <div class="gradient"></div><br> 
 
 <a class="btn btn-primary btn-sm float-end" href="page2.php" type="button">Next</a>
+
 <?php include 'footer.php'?>
+
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="index.php">
+
 <script src="main.js"></script>
 </body>
 

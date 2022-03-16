@@ -23,7 +23,11 @@ meals or snacks contain vegetables?</p>
 <div class="meal">
 <img src="img/meal-vegetables.jpg" alt="Meal with vegetables">
 </div>
+
 <?php include 'footer.php'?>
+
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="page8.php">
 
 <script src="main.js"></script>
 </body>

@@ -20,6 +20,9 @@
 
 <a class="btn btn-primary btn-sm float-end" href="page2.php" type="button">Back to Home</a>
 
+<!-- hidden field -->
+<input type="hidden" id="custId" name="custId" value="feedback-healthy.php">
+
 <script src="main.js"></script>
 </body>
 
