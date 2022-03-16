@@ -1,14 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Umfrage</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="styles.css" />
-</head>
 <body>
 <div class="header">
     <?php include 'header.php'?>
@@ -17,17 +6,19 @@
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 7:</b> On a typical day, how many of your
 meals or snacks contain protein?</p>
+<form id="form-7" name="form-7" action="page8.php">
 <label for="quantity">QTY:</label>
   <input type="number" id="quantity" name="quantity">
-<a class="btn btn-primary btn-sm float-end" href="page8.php" type="button">Next</a>
+<a class="btn btn-primary btn-sm float-end" href="page8.php" type="button" id="btn7">Next</a>
 <div class="meal">
 <img src="img/meal-protein.jpg" alt="Protein-meal">
 </div>
+</form>
 
 <?php include 'footer.php'?>
 
 <!-- hidden field -->
-<input type="hidden" id="custId" name="custId" value="page7.php">
+<input type="hidden" id="page7ID" name="page7ID" value="page7">
 
 <script src="main.js"></script>
 </body>

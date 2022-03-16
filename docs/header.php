@@ -19,6 +19,5 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Previous</a>
-      </li><br>
-    
-    </header>
+      </li><br>      
+</header>

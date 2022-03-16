@@ -1,13 +1,3 @@
-<html lang="en">
-
-<head>
-  <title>Umfrage</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="styles.css" />
-</head>
 <body>
 <div class="header">
     <?php include 'header.php'?>
@@ -16,17 +6,19 @@
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 10:</b> On a typical day, how many of your
 meals are microwaved or prepared?</p>
+<form id="form-10" name="form-10" action="feedback.php">
 <label for="quantity">QTY:</label>
   <input type="number" id="quantity" name="quantity">
-<a class="btn btn-primary btn-sm float-end" href="feedback.php" type="button">Check</a>
+<a class="btn btn-primary btn-sm float-end" href="feedback.php" type="button" id="btn10">Check</a>
 <div class="meal">
 <img src="img/meal-microwaved.jpg" alt="Microwaved meal">
 </div>
+</form>
 
 <?php include 'footer.php'?>
 
 <!-- hidden field -->
-<input type="hidden" id="custId" name="custId" value="page10.php">
+<input type="hidden" id="page10ID" name="page10ID" value="page10">
 
 <script src="main.js"></script>
 </body>
