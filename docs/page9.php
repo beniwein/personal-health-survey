@@ -1,12 +1,11 @@
 <body>
-<div class="header">
-    <?php 
-    session_start();
-    session_destroy();
+  <?php 
+  session_start();
+  session_destroy();
     
-    include 'header.php'
-    ?>
-</div>
+  include 'header.php'
+  ?>
+
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 9:</b> On a typical day, how many of your

@@ -1,11 +1,11 @@
 <body>
-<div class="header">
-    <?php 
-    session_start();
-    session_destroy();
+  <?php 
+  session_start();
+  session_destroy();
     
-    include 'header.php'
-    ?>
+  include 'header.php'
+  ?>
+
 </div>
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>

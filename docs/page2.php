@@ -1,12 +1,11 @@
 <body>
-<div class="header">
-    <?php 
-    session_start();
-    session_destroy();
+  <?php 
+  session_start();
+  /*session_destroy();*/
     
-    include 'header.php'
-    ?>
-</div>
+  include 'header.php'
+  ?>
+
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 2:</b></p>
@@ -17,10 +16,10 @@
 <!-- JS-Validation -->
 <p id="validation-warning" class="warning"></p>
   
-<br><input type="radio" name="yes_no" id="radioYes"> Yes</input>
+<br><input type="radio" name="yes_no" id="radioNo"> Yes</input>
 </p>
 <p>
-<input type="radio" name="yes_no" id="radioNo"> No</input>
+<input type="radio" name="yes_no" id="radioYes"> No</input>
 </p><br>
 <a class="btn btn-primary btn-sm float-end" href="page3.php" type="button">Next</a>
 <a class="btn btn-primary btn-sm float-none" href="index.php" type="button">Back</a>

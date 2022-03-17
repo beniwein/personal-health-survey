@@ -1,3 +1,25 @@
+// Page 1 + 3 + 5: Slider-Validation:
+
+
+
+// Page 2: Radiobutton-Validation:
+function validateRadio(yes_no){
+    let radioButtons = document.getElementsByName(yes_no);
+    for (let i = 0; i < radioButtons.length; i++){
+        let radioBtn = radioButtons[i];
+        if (radioBtn.checked == true) {
+            return true;
+        }        
+    }
+    setWarning("Please make your choice.");
+    return false;
+}
+
+// Page 4: Checkbox-Validation: 
+
+
+
+// Page 6-10: Number-Validation:
 function validateNumber() {
     let value = document.getElementById("quantity").value;
 
@@ -10,17 +32,7 @@ function setWarning(text) {
     let warningElement = document.getElementById("validation-warning");
     warningElement.innerText = text;
 }    
-function validateRadio(yes_no){
-    let radioButtons = documents.getElementsByName(yes_no);
-    for (let i = 0; i < radioButtons.lenght; i++){
-        let radioBtn = radioButtons[i];
-        if (radioBtn.checked == true) {
-            return true;
-        }        
-    }
-    setWarning("Please make your choice.");
-    return false;
-}
+
 /*
 function validateQuestionMinimal() {
     // Die 'id' des input elements muss hier exakt eingetragen werden.
