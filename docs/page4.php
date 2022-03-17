@@ -1,6 +1,11 @@
 <body>
 <div class="header">
-    <?php include 'header.php'?>
+    <?php 
+    session_start();
+    session_destroy();
+    
+    include 'header.php'
+    ?>
 </div>
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
@@ -59,7 +64,11 @@ do most?</label>
   <label class="form-label" for="form12">Short Description</label>
 </div>
 
+<!-- JS-Validation -->
+<p id="validation-warning" class="warning"></p>
+
 <a class="btn btn-primary btn-sm float-end" href="page5.php" type="button" id="btn4">Next</a>
+<a class="btn btn-primary btn-sm float-none" href="page3.php" type="button">Back</a>
 </div>
 </form>
 

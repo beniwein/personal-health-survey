@@ -8,7 +8,7 @@
 <img src="img/healthy_lifestyle_heart.jpg" alt="Healthy lifestyle heart">
 <img src="img/unhealthy-lifestyle-word-cloud.jpg" alt="Healthy lifestyle heart">
 
-<a class="btn btn-primary btn-sm float-end" href="index.php" type="button">Back to Home</a>
+<a class="btn btn-primary btn-sm float-end" href="" type="button">Back to fitandwell</a>
 
 <!-- hidden field -->
 <input type="hidden" id="feedback-healthyId" name="feedback-healthyId" value="feedback-healthy">
