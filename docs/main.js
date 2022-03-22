@@ -1,13 +1,23 @@
 // Page 1 + 3 + 5: Slider-Validation:
 
+function validateRange() {
+    let inputElement = document.getElementById(inputID);
 
+    if (inputElement.type === 'rangeIndex') {
+        // Prüfe, ob der Range Slider verändert wurde.
+        if (!sliderChanged()) {
+            setWarning("Bitte verändere die Position des Sliders.");
+            return false;
+        } 
+  }
+}
 
 // Page 2: Radiobutton-Validation:
-function validateRadio(yes_no){
-    let radioButtons = document.getElementsByName(yes_no);
+function validateRadio(){
+    let radioButtons = document.getElementsByName(yesNo);
     for (let i = 0; i < radioButtons.length; i++){
-        let radioBtn = radioButtons[i];
-        if (radioBtn.checked == true) {
+        let radio = radioButtons[i];
+        if (radio.checked == true) {
             return true;
         }        
     }
@@ -17,7 +27,20 @@ function validateRadio(yes_no){
 
 // Page 4: Checkbox-Validation: 
 
+function validateCheckbox() {
+    let array = [];
+    let checkbox = document.querySelectorAll('input[checkbox]:checked');
 
+    for (let i = 0; i < checkbox.length; i++) {
+        array.push(checkbox[i].value);
+
+    if (array.length === 0) {
+        setWarning("Please click at least one Checkbox.");
+        return false;
+    }
+    document.getElementById("checkboxValue").value = array.toString();
+    }
+  }
 
 // Page 6-10: Number-Validation:
 function validateNumber() {
@@ -28,6 +51,8 @@ function validateNumber() {
         return false;
     }
 }
+
+// Validation-Warning, all Pages:
 function setWarning(text) {
     let warningElement = document.getElementById("validation-warning");
     warningElement.innerText = text;
@@ -98,12 +123,5 @@ function sliderHasChanged() {
 
     if (hiddenInputElement.value == "1") return true;
     else return false;
-}
-
-// TOOLS -------------------------------------------------------------------
-
-function setWarning(text) {
-    let warningElement = document.getElementById("validation-warning");
-    warningElement.innerText = text;
 }
 */

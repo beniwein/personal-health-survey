@@ -1,19 +1,15 @@
 <body>
-  <?php 
-  session_start();
-  session_destroy();
-    
-  include 'header.php'
-  ?>
+  <?php include 'header.php';?>
+  <?php include 'data-collector.php'?>
 
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 4:</b></p>
 <div id="wrapper">
-  <label for="yes_no_radio">What additional physical activity do you
-do most?</label>
+  <label for="checkbox">What additional physical activity do you do most?</label>
+
 <!-- Default checkboxes -->
-<form id="wrapper4" name="wrapper4" action="page5.php">
+<form id="form" name="form" action="page5.php" method="post" onsubmit="return validateCheckbox('flexCheckDefault')">
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
   <label class="form-check-label" for="flexCheckDefault">No additional physical activity</label>
@@ -74,7 +70,8 @@ do most?</label>
 <?php include 'footer.php'?>
 
 <!-- hidden field -->
-<input type="hidden" id="page4ID" name="page4ID" value="page4">
+<input type="hidden" id="checkboxValue" name="checkboxValue">
+<input type="hidden" id="lastPageID" name="lastPageID" value="page4">
 
 <script src="main.js"></script>
 </body>

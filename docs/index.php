@@ -13,11 +13,11 @@ Question 1 out of 10. Check your final score after completion.</p><br>
 
 <p><b>Question 1:</b> How healthy are you physically?</p>
 
-<form id="index-form" name="index-form" action="page2.php" method="post" onsubmit="return validateQuestion('rangeIndex');">
+<form id="form" name="form" action="page2.php" method="post" onsubmit="return validateRange('rangeIndex')">
 <label class="form-label" for="rangeIndex">Self-assessment:</label>
-<div class="range">
-  <input type="range" class="form-range" step="0.5" min="0" max="5" id="rangeIndex" />
-</div>
+
+  <input type="range" class="form-range" step="0.5" min="0" max="5" name="key01" id="rangeIndex"/>
+
 <div class="d-flex justify-content-between">
     <div>
         Not at all healthy 

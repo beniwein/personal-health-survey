@@ -1,20 +1,16 @@
 <body>
-  <?php 
-  session_start();
-  session_destroy();
-    
-  include 'header.php'
-  ?>
+  <?php include 'header.php';?>
+  <?php include 'data-collector.php'?>
 
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 3:</b> How important is physical activity to you?</p>
 
-<form id="form-3" name="form-3" action="page4.php">
+<form id="form" name="form" action="page4.php" method="post" onsubmit="return validateRange('rangeIndex')">
 <label class="form-label" for="range3">Self-assessment:</label>
-<div class="range">
-  <input type="range" class="form-range" step="0.5" min="0" max="5" id="range3" />
-</div>
+
+  <input type="range" class="form-range" step="0.5" min="0" max="5" name="key03" id="rangeIndex"/>
+
 <div class="d-flex justify-content-between">
     <div>
         Not at all important 
@@ -36,7 +32,7 @@
 <?php include 'footer.php'?>
 
 <!-- hidden field -->
-<input type="hidden" id="page3ID" name="page3ID" value="page3">
+<input type="hidden" id="lastPageID" name="lastPageID" value="page3">
 
 <script src="main.js"></script>
 </body>

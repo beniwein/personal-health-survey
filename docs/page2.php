@@ -1,25 +1,21 @@
 <body>
-  <?php 
-  session_start();
-  /*session_destroy();*/
-    
-  include 'header.php'
-  ?>
+  <?php include 'header.php';?>
+  <?php include 'data-collector.php'?>
 
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 2:</b></p>
 
-<form id="wrapper2" name="wrapper2" action="page3.php" method="post" onsubmit="return validateRadio('yes_no');">
+<form id="form" name="form" action="page3.php" method="post" onsubmit="return validateRadio('radioNo, radioYes')">
   <label for="yes_no_radio">Do you take nutritional supplements?</label>
 <p>
 <!-- JS-Validation -->
 <p id="validation-warning" class="warning"></p>
   
-<br><input type="radio" name="yes_no" id="radioNo"> Yes</input>
+<br><input type="radio" name="yesNo" id="radioNo"> Yes</input>
 </p>
 <p>
-<input type="radio" name="yes_no" id="radioYes"> No</input>
+<input type="radio" name="yesNo" id="radioYes"> No</input>
 </p><br>
 <a class="btn btn-primary btn-sm float-end" href="page3.php" type="button">Next</a>
 <a class="btn btn-primary btn-sm float-none" href="index.php" type="button">Back</a>
@@ -31,7 +27,7 @@
 <script src="main.js"></script>
 
 <!-- hidden field -->
-<input type="hidden" id="page2ID" name="page2ID" value="page2">
+<input type="hidden" id="lastPageID" name="lastPageID" value="page2">
 
 </body>
 

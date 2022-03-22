@@ -1,18 +1,14 @@
 <body>
-  <?php 
-  session_start();
-  session_destroy();
-    
-  include 'header.php'
-  ?>
+  <?php include 'header.php';?>
+  <?php include 'data-collector.php'?>
 
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 9:</b> On a typical day, how many of your
 meals or snacks contain fruit?</p>
-<form id="form-9" name="form-9" action="page10.php">
+<form id="form" name="form" action="page10.php" method="post" onsubmit="return validateNumber('quantity')">
 <label for="quantity">QTY:</label>
-  <input type="number" id="quantity" name="quantity">
+  <input type="number" id="quantity" name="key09">
 
 <a class="btn btn-primary btn-sm float-end" href="page10.php" type="button" id="btn9">Next</a>
 
@@ -28,7 +24,7 @@ meals or snacks contain fruit?</p>
 <?php include 'footer.php'?>
 
 <!-- hidden field -->
-<input type="hidden" id="page9ID" name="page9ID" value="page9">
+<input type="hidden" id="lastPageID" name="lastPageID" value="page9">
 
 <script src="main.js"></script>
 </body>
