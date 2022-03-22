@@ -10,7 +10,7 @@
 
     $_SESSION["page10"] = $_POST["page10"];
 
-     function healthy() {
+    function healthy() {
         $healthy = true;
 
         if ($_SESSION["key03"] >= 3 && $_SESSION["key06"] >= 2 && 
