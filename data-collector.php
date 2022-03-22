@@ -1,4 +1,5 @@
 <?php
+// data-collector excluded, zu Gunsten Bootstrap-Layout
 session_start();
 
 $lastPageID = $_POST["lastPageID"];
