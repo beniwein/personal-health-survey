@@ -15,10 +15,6 @@
     </h6>
     <ul class="nav nav-tabs">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="index.php">Start</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Previous</a>
-      </li><br>
-    
-    </header>
+        <a class="nav-link active" aria-current="page" href="index.php"><b>Start</b></a>
+      </li><br>      
+</header>

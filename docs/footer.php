@@ -9,18 +9,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
-<div class="header">
-    <?php include 'header.php'?>
-</div>
-<br><h2>wellness hotel FIT - Demo:</h2>
-<h3>Online survey - personal health</h3>
-<p><b>Your Result:</b></p>
-<img src="img/unhealthy-lifestyle-word-cloud.jpg" alt="Healthy lifestyle heart">
-
-<a class="btn btn-primary btn-sm float-end" href="page2.php" type="button">Back to Home</a>
-
-<script src="main.js"></script>
-</body>
-
-</html>
+<footer class="footer">
+    <div class="text-center p-1">© 2022 Impressum: DEMO</div>
+  </footer>
