@@ -1,7 +1,7 @@
 // Page 1 + 3 + 5: Slider-Validation:
 
 function validateRange() {
-    let inputElement = document.getElementById(inputID);
+    let inputElement = document.getElementById();
 
     if (inputElement.type === 'rangeIndex') {
         // Prüfe, ob der Range Slider verändert wurde.
@@ -14,7 +14,7 @@ function validateRange() {
 
 // Page 2: Radiobutton-Validation:
 function validateRadio(){
-    let radioButtons = document.getElementsByName(yesNo);
+    let radioButtons = document.getElementsByName();
     for (let i = 0; i < radioButtons.length; i++){
         let radio = radioButtons[i];
         if (radio.checked == true) {
@@ -44,7 +44,7 @@ function validateCheckbox() {
 
 // Page 6-10: Number-Validation:
 function validateNumber() {
-    let value = document.getElementById("quantity").value;
+    let value = document.getElementById().value;
 
     if (value == ""){
         setWarning("Input missing, please verify.");
