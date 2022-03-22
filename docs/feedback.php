@@ -1,7 +1,6 @@
 <body>
-<div class="header">
-    <?php include 'header.php'?>
-</div>
+<?php include 'header.php'?>
+
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <p><b>Your Result:</b></p>

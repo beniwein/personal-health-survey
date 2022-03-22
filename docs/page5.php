@@ -1,3 +1,7 @@
+<?php
+$_SESSION["page4"] = $_POST["page4"];
+?>
+
 <body>
   <?php include 'header.php';?>
   <?php include 'data-collector.php'?>

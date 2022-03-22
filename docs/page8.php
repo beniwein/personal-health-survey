@@ -1,8 +1,11 @@
+<?php
+$_SESSION["page7"] = $_POST["page7"];
+?>
+
 <body>
   <?php include 'header.php';?>
   <?php include 'data-collector.php'?>
 
-</div>
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 8:</b> On a typical day, how many of your

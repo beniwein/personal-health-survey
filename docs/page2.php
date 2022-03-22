@@ -1,3 +1,7 @@
+<?php
+$_SESSION["index"] = $_POST["index"];
+?>
+
 <body>
   <?php include 'header.php';?>
   <?php include 'data-collector.php'?>
