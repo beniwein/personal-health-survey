@@ -4,8 +4,7 @@ $_SESSION["page3"] = $_POST["page3"];
 
 <body>
   <?php include 'header.php';?>
-  <?php include 'data-collector.php'?>
-
+  
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 4:</b></p>
@@ -13,7 +12,7 @@ $_SESSION["page3"] = $_POST["page3"];
   <label for="checkbox">What additional physical activity do you do most?</label>
 
 <!-- Default checkboxes -->
-<form id="form" name="form" action="page5.php" method="post" onsubmit="return validateCheckbox('flexCheckDefault')">
+<form id="form" name="form" action="page5.php" method="post">
 <div class="form-check">
   <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
   <label class="form-check-label" for="flexCheckDefault">No additional physical activity</label>

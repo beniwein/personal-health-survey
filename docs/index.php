@@ -1,8 +1,5 @@
 <body>
-  <?php 
-  session_start();
-  session_destroy();
-    
+  <?php    
   include 'header.php'
   ?>
 
@@ -13,7 +10,7 @@ Question 1 out of 10. Check your final score after completion.</p><br>
 
 <p><b>Question 1:</b> How healthy are you physically?</p>
 
-<form id="form" name="form" action="page2.php" method="post" onsubmit="return validateRange('rangeIndex')">
+<form id="form" name="form" action="page2.php" method="post">
 <label class="form-label" for="rangeIndex">Self-assessment:</label>
 
   <input type="range" class="form-range" step="0.5" min="0" max="5" name="key01" id="rangeIndex"/>

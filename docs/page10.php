@@ -4,13 +4,15 @@ $_SESSION["page9"] = $_POST["page9"];
 
 <body>
   <?php include 'header.php';?>
-  <?php include 'data-collector.php'?>
-
+ 
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 10:</b> On a typical day, how many of your
 meals are microwaved or prepared?</p>
-<form id="form" name="form" action="feedback.php" method="post" onsubmit="return validateNumber('quantity')">
+
+<form id="form" name="form" action="feedback.php" method="post">
+<span class="error">* <?php echo $keyErr;?></span>  
+
 <label for="quantity">QTY:</label>
   <input type="number" id="quantity" name="key10">
 

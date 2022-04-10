@@ -4,13 +4,12 @@ $_SESSION["index"] = $_POST["index"];
 
 <body>
   <?php include 'header.php';?>
-  <?php include 'data-collector.php'?>
-
+  
 <br><h2>wellness hotel FIT - Demo:</h2>
 <h3>Online survey - personal health</h3>
 <br><p><b>Question 2:</b></p>
 
-<form id="form" name="form" action="page3.php" method="post" onsubmit="return validateRadio('radioNo, radioYes')">
+<form id="form" name="form" action="page3.php" method="post">
   <label for="yes_no_radio">Do you take nutritional supplements?</label>
 <p>
 <!-- JS-Validation -->

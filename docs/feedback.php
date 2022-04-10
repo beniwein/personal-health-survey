@@ -6,10 +6,6 @@
 <p><b>Your Result:</b></p>
 
 <?php
-    session_start();
-
-    $_SESSION["page10"] = $_POST["page10"];
-
     function healthy() {
         $healthy = true;
 
@@ -25,17 +21,13 @@
 
 <?php
 
-$contentHealthy = file_get_contents('img/healthy_lifestyle_heart.jpg');
-$contentUnhealthy = file_get_contents('img/unhealthy-lifestyle-word-cloud.jpg');
-body('Content-Type: image/jpg');
-
 if (healthy()) {
 
-    echo $contentHealthy;
+    echo "<img id='heart' src = 'img/healthy_lifestyle_heart.jpg' alt='healthy livestyle heart'>";
 
     } else {
 
-    echo $contentUnhealthy;
+    echo "<img id='cloud' src = 'img/unhealthy-lifestyle-word-cloud.jpg' alt='unhealthy livestyle cloud'>";
 
     }
 ?>
